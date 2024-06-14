@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import Home from "./pages/Home";
+import HomePage from "./pages/Home";
 import FavoritesPage from "./pages/FavoritesPage";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <div className="flex">
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/favorites" element={<FavoritesPage />} />
         </Routes>
       </div>
